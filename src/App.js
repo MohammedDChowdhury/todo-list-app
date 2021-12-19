@@ -1,5 +1,6 @@
-import React from "react";
-import TodoForm from "./TodoForm";
+import React, { Component } from "react";
+import "./App.css";
+import TodoList from "./components/TodoList";
 
 /* 
 TodoMVC
@@ -13,23 +14,15 @@ TodoMVC
     7.1 only display if at least on is complete
 8. button to toggle all on/off
 */
-export default class TodoList extends React.Component {
-  state = {
-    todos: [],
-  };
 
-  addTodo = (todo) => {
-    this.setState({
-      todos: [todo, ...this.state.todos],
-    });
-  };
-
+class App extends Component {
   render() {
     return (
-      <div>
-        <TodoForm onSubmit={this.addTodo} />
-        {JSON.stringify(this.state.todos)}
+      <div className="App">
+        <TodoList />
       </div>
     );
   }
 }
+
+export default App;
