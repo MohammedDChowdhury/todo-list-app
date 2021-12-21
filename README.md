@@ -5,7 +5,7 @@
 #### http://sophisticated-judge.surge.sh/ 
 
 
-### Features:
+### FEATURES:
 #### 1. Add a task/todo
 #### 2. Display tasks/todos 
 #### 3. Cross off task/todo 
