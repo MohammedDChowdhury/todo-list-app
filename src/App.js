@@ -5,9 +5,9 @@ import TodoList from "./components/TodoList";
 /* 
 TodoMVC
 1. add todo (done)
-2. display todos
-3. cross off todo 
-4. show number of active todos
+2. display todos (done)
+3. cross off todo (done)
+4. show number of active todos (done)
 5. filter all/active/complete
 6. delete todo
 7. delete all complete

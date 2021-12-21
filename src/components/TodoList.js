@@ -49,8 +49,13 @@ export default class TodoList extends React.Component {
             key={todo.id}
             toggleComplete={() => this.toggleComplete(todo.id)}
             todo={todo}
+            // passing in a key, a toggleComplete function to check if it is complete
+            // and lastly passing in the todo parameter
           />
         ))}
+        <div>
+          todos left: {this.state.todos.filter((todo) => !todo.complete).length}
+        </div>
       </div>
     );
   }
