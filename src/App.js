@@ -12,7 +12,7 @@ TodoMVC
 6. delete todo (done)
 7. delete all the completed todos (done)
     7.1 only display if at least one is complete (done)
-8. button to toggle all on/off
+8. button to toggle all on/off (done)
 */
 
 class App extends Component {
