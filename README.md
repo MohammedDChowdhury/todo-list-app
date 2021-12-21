@@ -5,7 +5,7 @@
 #### http://sophisticated-judge.surge.sh/ 
 
 
-### Features of the Web Application:
+### Features:
 #### 1. Add a task/todo
 #### 2. Display tasks/todos 
 #### 3. Cross off task/todo 
