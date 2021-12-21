@@ -7,7 +7,7 @@ TodoMVC
 1. add todo (done)
 2. display todos
 3. cross off todo 
-4. show number of active todos
+4. display/show number of active todos
 5. filter all/active/complete
 6. delete todo
 7. delete all complete
@@ -17,6 +17,7 @@ TodoMVC
 export default class TodoList extends React.Component {
   state = {
     todos: [],
+    todoToDisplay: "all",
   };
 
   addTodo = (todo) => {
@@ -40,11 +41,26 @@ export default class TodoList extends React.Component {
     });
   };
 
+  updateTodoToDisplay = (s) => {
+    this.setState({
+      todoToDisplay: s,
+    });
+  };
   render() {
+    let todos = [];
+
+    if (this.state.todoToDisplay === "all") {
+      todos = this.state.todos;
+    } else if (this.state.todoToDisplay === "active") {
+      todos = this.state.todos.filter((todo) => !todo.complete);
+    } else if (this.state.todoToDisplay === "complete") {
+      todos = this.state.todos.filter((todo) => todo.complete);
+    }
+
     return (
       <div>
         <TodoForm onSubmit={this.addTodo} />
-        {this.state.todos.map((todo) => (
+        {todos.map((todo) => (
           <Todo
             key={todo.id}
             toggleComplete={() => this.toggleComplete(todo.id)}
@@ -55,6 +71,15 @@ export default class TodoList extends React.Component {
         ))}
         <div>
           todos left: {this.state.todos.filter((todo) => !todo.complete).length}
+        </div>
+        <div>
+          <button onClick={() => this.updateTodoToDisplay("all")}>all</button>
+          <button onClick={() => this.updateTodoToDisplay("active")}>
+            active
+          </button>
+          <button onClick={() => this.updateTodoToDisplay("complete")}>
+            complete
+          </button>
         </div>
       </div>
     );

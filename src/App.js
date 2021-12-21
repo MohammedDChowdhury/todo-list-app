@@ -8,7 +8,7 @@ TodoMVC
 2. display todos (done)
 3. cross off todo (done)
 4. show number of active todos (done)
-5. filter all/active/complete
+5. filter all/active/complete (done)
 6. delete todo
 7. delete all complete
     7.1 only display if at least on is complete
