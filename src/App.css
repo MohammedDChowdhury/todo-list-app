@@ -36,3 +36,38 @@
     transform: rotate(360deg);
   }
 }
+button {
+  color: red;
+}
+
+.addTaskBtn {
+  background-color: rgb(21, 155, 189);
+  color: rgba(255, 255, 255, 0.952);
+  padding: 5px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  position: absolute;
+
+  border: thick double #071e5e;
+  height: 5.4%;
+}
+input {
+  width: 17%;
+
+  padding: 12px 20px;
+  margin: 1px 0;
+  box-sizing: border-box;
+  background-color: #061453;
+}
+::placeholder {
+  color: rgb(255, 255, 255);
+  font-size: medium;
+
+  /* color: mintcream;
+  background: thistle; */
+}
+body {
+  background-color: #061453;
+}

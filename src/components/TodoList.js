@@ -73,7 +73,8 @@ export default class TodoList extends React.Component {
           />
         ))}
         <div>
-          todos left: {this.state.todos.filter((todo) => !todo.complete).length}
+          Tasks remaining:{" "}
+          {this.state.todos.filter((todo) => !todo.complete).length}
         </div>
         <div>
           <button onClick={() => this.updateTodoToDisplay("all")}>all</button>
