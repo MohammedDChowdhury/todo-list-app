@@ -11,6 +11,6 @@
 #### 3. Cross off task/todo 
 #### 4. Show number of active tasks/todos
 #### 5. Filter all/active/complete tasks/todos
-#### 6. Delete task/todo (done)
+#### 6. Delete task/todo
 #### 7. Delete all the completed tasks/todos
 #### 8. Button to toggle all tasks/todos as complete  
