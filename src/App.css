@@ -54,7 +54,7 @@ button {
   height: 5.4%;
 }
 input {
-  width: 17%;
+  width: 30%;
   color: rgb(255, 242, 227);
   padding: 12px 20px;
   margin: 1px 0;
@@ -65,7 +65,7 @@ input {
 }
 ::placeholder {
   color: rgb(255, 242, 227);
-  font-size: medium;
+  font-size: 1em;
 }
 body {
   background-color: #062a53;
