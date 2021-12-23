@@ -1,6 +1,13 @@
 import React from "react";
 export default (props) => (
-  <div style={{ display: "flex", justifyContent: "center" }}>
+  <div
+    style={{
+      display: "flex",
+      justifyContent: "center",
+      color: "white",
+      fontSize: "16px",
+    }}
+  >
     <div
       style={{
         textDecoration: props.todo.complete ? "line-through" : "",
@@ -9,6 +16,8 @@ export default (props) => (
     >
       {props.todo.text}
     </div>
-    <button onClick={props.onDelete}>x</button>
+    <button className="deleteBtn" onClick={props.onDelete}>
+      x
+    </button>
   </div>
 );

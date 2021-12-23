@@ -30,7 +30,7 @@ export default class TodoForm extends React.Component {
           name="text"
           value={this.state.text}
           onChange={this.handleChange}
-          placeholder="todo..."
+          placeholder="Type here..."
         />
 
         <button

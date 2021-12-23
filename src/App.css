@@ -55,19 +55,44 @@ button {
 }
 input {
   width: 17%;
-
+  color: rgb(255, 242, 227);
   padding: 12px 20px;
   margin: 1px 0;
   box-sizing: border-box;
-  background-color: #061453;
+  background-color: #062a53;
+  border: thick double #07435e;
+  font-size: 16px;
 }
 ::placeholder {
-  color: rgb(255, 255, 255);
+  color: rgb(255, 242, 227);
   font-size: medium;
-
-  /* color: mintcream;
-  background: thistle; */
 }
 body {
-  background-color: #061453;
+  background-color: #062a53;
+}
+.divTaskRemaining {
+  color: rgb(255, 255, 255);
+}
+.otherBtns {
+  background-color: rgb(21, 155, 189);
+  color: rgba(255, 255, 255, 0.952);
+  padding: 5px 20px;
+
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border: thick double #071e5e;
+}
+.deleteBtn {
+  background-color: rgb(189, 21, 21);
+  color: rgba(255, 255, 255, 0.952);
+  padding: 3px 10px;
+  position: relative;
+  left: 8px;
+
+  border-radius: 8px;
+  text-decoration: none;
+
+  font-size: 14px;
+  border: thick double #071e5e;
 }

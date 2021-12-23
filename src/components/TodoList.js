@@ -72,28 +72,43 @@ export default class TodoList extends React.Component {
             // and lastly passing in the todo parameter
           />
         ))}
-        <div>
+        <div className="divTaskRemaining">
           Tasks remaining:{" "}
           {this.state.todos.filter((todo) => !todo.complete).length}
         </div>
         <div>
-          <button onClick={() => this.updateTodoToDisplay("all")}>all</button>
-          <button onClick={() => this.updateTodoToDisplay("active")}>
-            active
+          <button
+            className="otherBtns"
+            onClick={() => this.updateTodoToDisplay("all")}
+          >
+            Display all tasks
           </button>
-          <button onClick={() => this.updateTodoToDisplay("complete")}>
-            complete
+          <button
+            className="otherBtns"
+            onClick={() => this.updateTodoToDisplay("active")}
+          >
+            Display active tasks
+          </button>
+          <button
+            className="otherBtns"
+            onClick={() => this.updateTodoToDisplay("complete")}
+          >
+            Display completed tasks
           </button>
         </div>
         {this.state.todos.some((todo) => todo.complete) ? (
           <div>
-            <button onClick={this.removeAllTodosThatAreComplete}>
-              remove all complete todos
+            <button
+              className="otherBtns"
+              onClick={this.removeAllTodosThatAreComplete}
+            >
+              Remove all completed tasks
             </button>
           </div>
         ) : null}
         <div>
           <button
+            className="otherBtns"
             onClick={() =>
               this.setState((state) => ({
                 todos: state.todos.map((todo) => ({
